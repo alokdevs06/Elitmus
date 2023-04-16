@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+		<link rel="stylesheet" href="{{url_for('static', filename = 'form.css') }}" media="screen">
+		<link rel="icon" type="image/ico" href="{{url_for('static', filename = 'images/favicon.ico') }}">
+
+</head>
+
+<style>
+	body{
+       background-color: #d5ff19;
+	 }
+	.heading{
+		display: flex;
+	}
+	.heading h1{
+		flex-grow: 1;
+	}
+	.heading button{
+		margin-top: 25px;
+	}
+	.heading a:link, a:active, a:visited, a:hover{
+		text-decoration: none;
+	}
+	
+	</style>	
+
+	
+<body style="padding: 1% 5%">
+	<div class="heading">
+	<h1 align="center" style="color: #00ef38">PUZZLE MASTER</h1>
+		
+	<div align="right"><button style="background-color: #02cf21; padding: 5px; border-radius: 10px;"><a href="/templates/Login.html">ADMIN LOGIN</a></button></div>
+	</div>
+	<p align="center">Unlock the challenge, master the puzzle - with Puzzle Master.Puzzle Master is more than just a game - it's a journey. With its intricate designs and challenging levels, you'll be entertained for hours on end. Fill the details and the play the quiz to assess your soft skills.</p>
+	<div style="padding: 1% 2%">
+	<div class="formContainer" style="padding: 2%;">
+		<form action="{{url_for('index')}}" method="post">
+			<div class="row">
+				<div class="col-25">
+			<label for="user">Name</label>
+				</div>
+				<div class="col-75">
+			<input type="text" name="name" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+			<label for="email">Email</label>
+				</div>
+				<div class="col-75">
+			<input type="email" name="email" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class = "col-25">
+			<label for="pwd">Phone Number</label>
+				</div>
+				<div class = "col-75">
+			<input type="tel" name="phno" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+			<label for="age">Age</label>
+				</div>
+				<div class="col-75">
+			<input type="number" name="age" required>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+			<input type="submit" name="submit" style="margin: 0 auto" value="PLAY THE GAME">
+				</div>
+		</form>
+		
+		</div>
+	</div>
+</body>
+</html>

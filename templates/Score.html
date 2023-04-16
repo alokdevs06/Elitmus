@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Score</title>
+		<link rel="icon" type="image/ico" href="{{url_for('static', filename = 'images/favicon.ico') }}">
+
+</head>
+<style>
+	a:link, a:active, a:visited, a:hover{
+		text-decoration: none;
+	}
+</style>	
+<body style="padding: 0 5%">
+	<h1 align="center" style="color: #0be200">Soft Skills Hunt</h1>
+	<h4 align="center">Bravo!!! You have successfully completed your assessment!</h4>
+	<div align="center" style="width: 400px; height: 250px; background-color: #14e9be; margin: 0 auto; padding: 1%; border-radius: 50px">
+		<br><br>
+	<p>You can find your assessment analytics here.</p>
+	<p><strong>Your Score</strong> : {{score}} points out of 5
+	<br><strong>Time Taken</strong> : {{time[0]}} Hours, {{time[1]}} Minutes, {{time[2]}} Seconds <br><br>How about one more try? May be there's room for improvement.</p>
+	<button style="background-color: #15ff00; border-radius: 5px; padding: 5px"><a href="/">Play Again</a></button>
+	</div>
+</body>
+</html>

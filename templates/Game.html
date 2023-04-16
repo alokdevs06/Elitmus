@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<link rel="icon" type="image/ico" href="{{url_for('static', filename = 'images/favicon.ico') }}">
+
+<title>Game</title>
+	
+</head>
+
+	<style>
+		.col-25 {
+			display: inline;
+			padding: 5px 0;
+		}
+		.col-25 label{
+			margin: auto;
+		}
+		.col-25 img{
+			width: 200px;
+			height: auto;
+			padding: 10px;
+		}
+		.row{
+			padding: 10px 0;
+		}
+		.col-75{
+			padding: 5px 0;
+		}
+		
+		input[type=submit] {
+		  background-color: #06f906;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  float: right;
+		  margin: 0 auto;
+		  text-align: center;
+		}
+		.col-25 > label{
+			color:rgb(0, 255, 0);
+			font-weight: bold;
+		}
+		.col-25 > sub{
+			font-weight: 700;
+		}
+	</style>	
+	
+<body>
+	<h1 align="center" style="color: #05ea18">Soft Skills Quiz</h1>
+	<form class="formContainer" action="{{url_for('game')}}"  method="post" style="padding: 1% 5%;">
+		<div class="row">
+				<div class="col-25">
+					<label for="user">1) What should you do in an interview?<br></label><sub>Hint - You should be confident</sub><br>
+					<img src="https://www.currentconsulting.co.za/wp-content/uploads/2017/07/body-language-1.jpg" alt="">
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="1" value="0">
+					<label for="">A) You should Slouch and Stare</label><br>
+					<input type="radio" id="" name="1" value="0">
+					<label for="">B) You should Frown and Fidget</label><br>
+					<input type="radio" id="" name="1" value="1">
+					<label for="">C) You should sit straight and Smile</label><br>
+					<input type="radio" id="" name="1" value="0">
+					<label for="">D) All of these</label><br>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-25">
+					<label for="user">2) Which of the following is an example of effective communication?<br></label><sub>Hint - Communication is 2 way!</sub><br>
+				
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="2" value="0">
+					<label for="">A) Speaking loudly to get your point across</label><br>
+					<input type="radio" id="" name="2" value="0">
+					<label for="">B) Interrupting others while they are speaking</label><br>
+					<input type="radio" id="" name="2" value="1">
+					<label for="">C) Listening actively and responding appropriately</label><br>
+					<input type="radio" id="" name="2" value="0">
+					<label for="">D) Ignoring the other person's point of view</label><br>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-25">
+					<label for="user">3) What does this pose signify?<br></label><sub>Hint - When you are not sure</sub><br>
+					<img src="https://listverse.com/wp-content/uploads/2013/07/confused-e1372986731860.jpg" alt="">
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="3" value="0">
+					<label for="">A) Happy</label><br>
+					<input type="radio" id="" name="3" value="0">
+					<label for="">B) Sad</label><br>
+					<input type="radio" id="" name="3" value="0">
+					<label for="">C) Suspicious</label><br>
+					<input type="radio" id="" name="3" value="1">
+					<label for="">D) Confused</label><br>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-25">
+					<label for="user">4) Which of the following is a key component of teamwork?<br></label><sub>Hint - Teamwork involves working together</sub><br>
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="4" value="0">
+					<label for="">A) Working alone and not involving others</label><br>
+					<input type="radio" id="" name="4" value="0">
+					<label for="">B) Taking all the credit for the team's success</label><br>
+					<input type="radio" id="" name="4" value="1">
+					<label for="">C) Collaborating and sharing ideas with team members</label><br>
+					<input type="radio" id="" name="4" value="0">
+					<label for="">D) Blaming others for any failures or setbacks</label><br>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-25">
+					<label for="user">5) What does this guesture typically signify when someone does it during a conversation?<br></label><sub>Hint - Touching Ear</sub><br>
+					<img src="https://www.scienceofpeople.com/wp-content/uploads/2021/01/Kenyon-Ears-ScratchingTouchingEars-YoungAdult-Male-Front-1536x1025.jpg" alt="">
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="5" value="0">
+					<label for="">A) They are showing interest in the conversation</label><br>
+					<input type="radio" id="" name="5" value="1">
+					<label for="">B) They are feeling anxious or stressed</label><br>
+					<input type="radio" id="" name="5" value="0">
+					<label for="">C) They are signaling that they want to end the conversation</label><br>
+					<input type="radio" id="" name="5" value="0">
+					<label for="">D) They are trying to be polite and attentive</label><br>
+				</div>
+		</div>
+			<div class="row">
+			<input type="submit" name="submit" style="margin: 0 auto" value="Submit Answers">
+				</div>
+	</form>
+	<br><br>
+</body>
+</html>
